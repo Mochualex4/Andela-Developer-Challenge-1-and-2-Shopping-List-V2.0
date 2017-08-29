@@ -1,21 +1,21 @@
 class Config(object):
     """
-    Add the most common configurationns here that will common across all environments
+    Common configurations
     """
 
 class ShoppingAppDevelopmentConfig(Config):
     """
-    Shopping app development configurations to be added here
+    Development configurations
     """
     DEBUG = True
 
 class ShoppingAppProductionConfig(Config):
     """
-    Shopping app production configurations
+    Production configurations
     """
     DEBUG = False
 
-app_config = {
+shopping_app_config = {
     'development' : ShoppingAppDevelopmentConfig,
     'production' : ShoppingAppProductionConfig 
 }
