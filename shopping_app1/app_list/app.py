@@ -6,13 +6,13 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 app.config.update(dict(
-    DATABASE=os.path.join(app.root_path, 'app.db'),
+    DATABASE=os.path.join(app.root_path, 'app_list.db'),
     SECRET_KEY='development key',
     USERNAME='admin',
     PASSWORD='default'
 ))
 
-app.config.from_envvar('APP_SETTINGS', silent=True)
+app.config.from_envvar('APP_LIST_SETTINGS', silent=True)
 
 def connect_db():
     

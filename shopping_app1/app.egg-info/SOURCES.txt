@@ -7,3 +7,4 @@ app.egg-info/SOURCES.txt
 app.egg-info/dependency_links.txt
 app.egg-info/requires.txt
 app.egg-info/top_level.txt
+app/static/style.css
