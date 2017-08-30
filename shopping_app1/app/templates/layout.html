@@ -13,7 +13,7 @@
         <diV>
             {% if not session.logged_in %}
                 <a href="{{ url_for('login') }}">Log in </a>
-            {% esle %}
+            {% else %}
                 <a href="{{ url_for('logout') }}"></a>
             {% endif %}    
         </div>
