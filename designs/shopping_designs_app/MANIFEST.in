@@ -1,0 +1,2 @@
+graft designs_app/templates
+graft designs_app/static
