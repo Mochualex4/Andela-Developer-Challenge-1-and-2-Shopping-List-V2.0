@@ -1,0 +1,13 @@
+MANIFEST.in
+designs_app/__init__.py
+designs_app/designs_app.py
+designs_app.egg-info/PKG-INFO
+designs_app.egg-info/SOURCES.txt
+designs_app.egg-info/dependency_links.txt
+designs_app.egg-info/requires.txt
+designs_app.egg-info/top_level.txt
+designs_app/static/css/style.css
+designs_app/templates/dashboard.html
+designs_app/templates/homepage.html
+designs_app/templates/login.html
+designs_app/templates/register.html
