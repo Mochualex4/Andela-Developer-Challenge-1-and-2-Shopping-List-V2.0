@@ -2,10 +2,14 @@
 I believe I Own My Own Learning. World Class Software Developers learn by building.
 
 # Contents
-1. Designs folder (Contains: UML Class Diagrams, Wireframes and shopping_app{Flask app "OOP"}
+1. Designs folder (Contains: UML Class Diagrams, Wireframes and shopping-design_app{Flask app "OOP"}
 2. Shopping_app1 (Contains: Flask App Using SQLite)
 3. Javascript TDD practice folder
 4. Python TDD prcatise folder
+
+# Flask Apps 
+1. shopping_designs_app (Contained in the designs folder. To implement OOP. No database)
+2. shopping_app (To use the use of a database. Using SQLite )
 
 # Testing shopping_designs_app
 
