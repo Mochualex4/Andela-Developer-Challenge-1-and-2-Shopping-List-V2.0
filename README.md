@@ -10,6 +10,7 @@ I believe I Own My Own Learning. World Class Software Developers learn by buildi
 # Flask Apps 
 1. shopping_designs_app (Contained in the designs folder. To implement OOP. No database)
 2. shopping_app (To use the use of a database. Using SQLite )
+--- Please NOTE both app are to have an almost similar UI ------
 
 # Testing shopping_designs_app
 
