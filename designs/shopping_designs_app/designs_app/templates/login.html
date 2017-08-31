@@ -1,37 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shopping List V2.0</title>
-    <link rel="stylesheet" href="/static/css/style.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-       <div class="container topnav">
-           <div class="navabar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                   <span class="sr-only">Toggle Navigation</span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand topnav" href="#">The Shopping List V2.0</a>   
-           </div>
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#">Home</a></li>
-                   <li><a href="#">Register</a></li>
-                   <li><a href="#">Login</a></li>
-               </ul>
+{% extends "basecode.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="content-section">
+        <div class="center">
+        
+            <form class="form-horizontal">
+                <fieldset>
 
-           </div>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput">Username/email</label>  
+                        <div class="col-md-4">
+                        <input id="textinput" name="textinput" placeholder="Enter Username/Email" class="form-control input-md" required="" type="text">
+                        <span class="help-block"> </span>  
+                        </div>
+                    </div>
 
-       </div>
-       
-   </nav> 
-</body>
-</html>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="textinput">Paasword</label>  
+                        <div class="col-md-4">
+                        <input id="textinput" name="textinput" placeholder="Enter Password" class="form-control input-md" required="" type="text">
+                        <span class="help-block"> </span>  
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"> </label>
+                        <div class="col-md-4">
+                        <button id="singlebutton" name="singlebutton" class="btn btn-danger"><a href="{{ url_for('dashboard') }}">Login</a></button>
+                        </div>
+                    </div>
+                          
+                </fieldset>
+            </form>
+
+
+        </div>    
+</div>
+{% endblock %}

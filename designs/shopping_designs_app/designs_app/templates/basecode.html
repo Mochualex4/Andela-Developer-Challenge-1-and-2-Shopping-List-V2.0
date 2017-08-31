@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shopping Designs App</title>
+    <title>{{ title }} | Code Base</title>
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
@@ -12,23 +12,16 @@
 <body>
     <header class="container">
         <div class="row">
-          <h1 class="col-sm-8">Shopping App Design</h1>
+          <h1 class="col-sm-8">Shopping App Design V2.0</h1>
           <nav class="col-sm-4">
             <p><a href="http://127.0.0.1:5000/">Home</a></p>
-            <p><a href="{{ url_for('register') }}">Register</a></p>
-            <p><a href="{{ url_for('login') }}">Login</a></p>
+            <p><a href="http://127.0.0.1:5000/signup">Register</a></p>
+            <p><a href="http://127.0.0.1:5000/login">Login</a></p>
           </nav>
         </div>
       </header>
-      <section class="jumbotron">
-        <div class="container">
-          <div class="row text-center">
-            <h2>Welcome to this Shopping App</h2>
-            <h3>View Lists By Logging In</h3>
-            <a class="btn btn-danger" href="{{ url_for('register') }}">Register For Free Account</a>
-          </div>
-        </div>
-      </section>
+      {% block body %}
+      {% endblock %}
       <footer class="container">
         <div class="row">
           <p class="col-sm-4">&copy; 2017 Alex Mochu</p>
