@@ -1,4 +1,0 @@
-{
-  "app/tests/test_app.py": true,
-  "app_list/tests/test_app.py::AppTestCase::test_empty_db": true
-}

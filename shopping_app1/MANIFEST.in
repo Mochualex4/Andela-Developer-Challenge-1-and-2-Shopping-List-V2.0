@@ -1,3 +1,0 @@
-graft app_list/templates
-graft app_list/static
-include app_list/schema.sql
