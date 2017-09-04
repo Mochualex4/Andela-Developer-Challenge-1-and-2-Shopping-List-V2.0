@@ -1,39 +1,23 @@
 {% extends "basecode.html" %}
 {% block title %}Login{% endblock %}
 {% block body %}
+{% if session['logged_in'] %}
+<p></p>
+{% else %}
 <div class="content-section">
         <div class="center">
         
-            <form class="form-horizontal">
-                <fieldset>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Username/email</label>  
-                        <div class="col-md-4">
-                        <input id="textinput" name="textinput" placeholder="Enter Username/Email" class="form-control input-md" required="" type="text">
-                        <span class="help-block"> </span>  
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Paasword</label>  
-                        <div class="col-md-4">
-                        <input id="textinput" name="textinput" placeholder="Enter Password" class="form-control input-md" required="" type="text">
-                        <span class="help-block"> </span>  
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="singlebutton"> </label>
-                        <div class="col-md-4">
-                        <button id="singlebutton" name="singlebutton" class="btn btn-danger"><a href="{{ url_for('dashboard') }}">Login</a></button>
-                        </div>
-                    </div>
-                          
-                </fieldset>
+            <form class="form-horizontal" action="/login" method="POST">
+                <input type="username" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <input type="submit" value="Log in">
+                <button id="singlebutton" name="singlebutton" class="btn btn-danger"><a href="{{ url_for('dashboard') }}">Login</a></button>
+                       
+            
             </form>
 
 
         </div>    
 </div>
+{% endif %}
 {% endblock %}
