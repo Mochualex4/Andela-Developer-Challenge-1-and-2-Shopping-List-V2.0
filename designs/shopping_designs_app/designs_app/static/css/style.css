@@ -36,7 +36,7 @@ body {
   .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url(../img/shopping_list.png) no-repeat center center;
+    background-image: url(/static/img/shopping_list.png) no-repeat center center;
     background-size: cover;
     color: rgb(255, 255, 255);
     height: 500px;

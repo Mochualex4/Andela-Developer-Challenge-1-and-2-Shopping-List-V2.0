@@ -23,7 +23,7 @@ def create_app(config_name):
     from designs_app import models
 
     from .person import person as person_blueprint
-    app.register_blueprint(person_blueprint, url_prefix='/admin')
+    app.register_blueprint(person_blueprint)
 
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)

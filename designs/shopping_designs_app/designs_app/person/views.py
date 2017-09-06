@@ -1,9 +1,9 @@
 from flask import abort, flash, redirect, render_template, url_for
 from flask_login import current_user, login_required
 
-from . import person
-from forms import DepartmentForm
+from . import forms
 
+from . import person
 
 @person.route('/lists', methods=['GET', 'POST'])
 #login required
@@ -13,7 +13,7 @@ def list_shoppinglists():
     
 
     return render_template('person/lists/lists.html',
-                           lists=lists, title="List")
+                           lists=list, title="List")
 
 @person.route('/lists/add', methods=['GET', 'POST'])
 #login reuirred

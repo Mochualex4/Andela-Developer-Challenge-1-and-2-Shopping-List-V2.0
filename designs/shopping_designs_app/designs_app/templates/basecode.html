@@ -14,9 +14,9 @@
         <div class="row">
           <h1 class="col-sm-8">Shopping App Design V2.0</h1>
           <nav class="col-sm-4">
-            <p><a href="http://127.0.0.1:5000/">Home</a></p>
-            <p><a href="http://127.0.0.1:5000/signup">Register</a></p>
-            <p><a href="http://127.0.0.1:5000/login">Login</a></p>
+            <p><a href="#">Home</a></p>
+            <p><a href="{{ url_for('auth.register') }}">Register</a></p>
+            <p><a href="{{ url_for('auth.login') }}">Login</a></p>
           </nav>
         </div>
       </header>
