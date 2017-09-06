@@ -2,7 +2,8 @@ from flask import flash, redirect, render_template, url_for
 from flask_login import login_required, login_user, logout_user
 
 from . import auth
-from forms import LoginForm, RegistrationForm
+from .forms import RegistrationForm, LoginForm
+from ..models import User
 
 # import Users from model
 
@@ -10,6 +11,7 @@ from forms import LoginForm, RegistrationForm
 def register():
     
     form = RegistrationForm()
+    
     if form.validate_on_submit():
         user = User(email=form.email.data,
                             username=form.username.data,

@@ -3,10 +3,10 @@ from flask_login import current_user, login_required
 
 from . import home
 
-@home.route('/')
+@home.route('/', methods=['GET', 'POST'])
 def homepage():
     
-    return render_template('home/index.html', title="Shop List")
+    return render_template('home/homepage.html', title="Shop List")
 
 @home.route('/dashboard')
 #make user login first
